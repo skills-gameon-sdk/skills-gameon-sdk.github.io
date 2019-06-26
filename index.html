@@ -1,0 +1,1099 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SDK for Node.js</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	hello!!!
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<div class="nav-links">
+						<ul>
+							<li>
+								<a href="https://github.com/amzn/gameon-alexa-sdk" alt="GitHub Repository">
+									<svg width="22" height="22" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title"><img src="media/images/icon.png"></img></a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> SDK for Node.js</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p align="center">
+					<img src="./media/images/gameon-alexa-logo.png">
+					<br/>
+					<h1 align="center">Skills GameOn SDK for Node.js</h1>
+					<p align="center"><a href="https://travis-ci.com/alexa-games/skills-gameon-sdk-js/"><img src="https://travis-ci.com/alexa-games/skills-gameon-sdk-js.svg?token=aU3oCtpD6FyRqzKE87WW&branch=master"></a></p>
+				</p>
+				<blockquote>
+					<p><strong>Note:</strong> This public beta release of the Skills GameOn SDK includes the documentation, SDK code and sample code.
+						Please note that we may improve or change the Skills GameOn SDK as we receive feedback and iterate on the feature.
+					<br></p>
+				</blockquote>
+				<p>The GameOn Alexa SDK for Node.js provides easy access to Amazon GameOn and creates higher-level methods, utilities, and examples that simplify the integration of GameOn features, like leaderboards, with Alexa skills.</p>
+				<h2 id="amazon-gameon">Amazon GameOn</h2>
+				<p>Amazon GameOn is a set of flexible APIs that allow you to build cross-platform competitions into your games that drive engagement and increase monetization. With GameOn, you have an easy tool to strengthen your fanbase with leaderboards and leagues, awarding in-game and real-world prizes fulfilled by Amazon, and enabling streamers to play with their followers with a simple click. To learn more, see <a href="https://developer.amazon.com/gameon" target="_blank">Amazon GameOn</a>.</p>
+				<h2 id="license">License</h2>
+				<p>The Skills GameOn SDK and GameOn SDK packages are licensed under the
+				<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>. The samples are licensed separately under the <a href="https://aws.amazon.com/asl/">Amazon Software License</a>.</p>
+				<h2 id="gameon-pricing">GameOn Pricing</h2>
+				<p>Alexa skill developers who publish an Alexa skill using the Skills GameOn SDK during the beta period will be eligible to receive free plays for usage within the Alexa skill. To qualify for this offer, <a href="https://developer.amazon.com/blogs/alexa/post/671de3de-0635-4626-9371-e926d7d655d6/skills-gameon-sdk">click here</a> to learn more.</p>
+				<h2 id="packages-and-samples">Packages and Samples</h2>
+				<h3 id="packages">Packages</h3>
+				<ul>
+					<li><strong>GameOn SDK</strong> - A dependency free Node.js compatible API client, generated from the GameOn Swagger source with coverage of all the non-Admin API methods.</li>
+					<li><strong>Skills GameOn SDK</strong> - Common features that Alexa skill developers may want to leverage:<ul>
+							<li>Player-focused convenience methods:<ul>
+									<li><code>SkillsGameOnApiClient#initializeNewPlayer</code></li>
+									<li><code>SkillsGameOnApiClient#refreshPlayerSession</code></li>
+									<li><code>SkillsGameOnApiClient#enterTournamentForPlayer</code></li>
+									<li><code>SkillsGameOnApiClient#submitScoreForPlayer</code></li>
+									<li>And more!</li>
+								</ul>
+							</li>
+							<li>Name generator - for when you want to assign random names to players.</li>
+							<li>Secrets management for deployment on <a href="https://aws.amazon.com/lambda/" target="_blank">AWS Lambda</a>.</li>
+							<li>Avatar generator, for a quick way to pre-create unique avatars for players.</li>
+							<li>APL (Alexa Presentation Language) - example templates and helper methods to get you started with visually displaying a leaderboard.</li>
+						</ul>
+					</li>
+				</ul>
+				<h3 id="sample-skills">Sample Skills</h3>
+				<ul>
+					<li><strong>Word Word</strong> - A sample skill that showcases daily tournaments and many of the other above features. The Word Word skill is live, so you can enable it on your Alexa devices and play it today.
+					More information about the skill is also on the <a href="https://www.amazon.com/Amazon-Word/dp/B07PQYDDTJ/">Alexa Skills Store</a>.</li>
+				</ul>
+				<h2 id="package-versions">Package Versions</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Package</th>
+							<th>NPM</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><a href="https://github.com/alexa-games/skills-gameon-sdk-js/tree/master/packages/gameon-sdk">@alexa-games/gameon-sdk</a></td>
+							<td><a href="https://www.npmjs.com/package/@alexa-games/gameon-sdk"><img src="https://img.shields.io/npm/v/@alexa-games/gameon-sdk.svg" alt="npm"></a> <a href="https://www.npmjs.com/package/@alexa-games/gameon-sdk"><img src="https://img.shields.io/npm/dt/@alexa-games/gameon-sdk.svg" alt="npm"></a></td>
+						</tr>
+						<tr>
+							<td><a href="https://github.com/alexa-games/skills-gameon-sdk-js/tree/master/packages/skills-gameon-sdk">@alexa-games/skills-gameon-sdk</a></td>
+							<td><a href="https://www.npmjs.com/package/@alexa-games/skills-gameon-sdk"><img src="https://img.shields.io/npm/v/@alexa-games/skills-gameon-sdk.svg" alt="npm"></a> <a href="https://www.npmjs.com/package/@alexa-games/skills-gameon-sdk"><img src="https://img.shields.io/npm/dt/@alexa-games/skills-gameon-sdk.svg" alt="npm"></a></td>
+						</tr>
+				</tbody></table>
+				<h2 id="contributing">Contributing</h2>
+				<p>To contribute to the Skills GameOn SDK for Node.js, checkout out the <a href="#development">development</a>
+					section below and then the
+				Skills GameOn SDK for Node.js <a href="https://github.com/alexa-games/skills-gameon-sdk-js/blob/master/CONTRIBUTING.md">contribution guidelines</a>.</p>
+				<h2 id="releases">Releases</h2>
+				<p>New Skills GameOn SDK for Node.js versions are released via the GitHub repository
+					<a href="https://github.com/alexa-games/skills-gameon-sdk-js/releases">releases</a> page. A
+				history of changes is recorded in our <a href="https://github.com/alexa-games/skills-gameon-sdk-js/blob/master/CHANGELOG.md">changelog</a>.</p>
+				<h2 id="contact">Contact</h2>
+				<p>You can get in touch with the Skills GameOn SDK for Node.js community in the
+				following ways:</p>
+				<ul>
+					<li>Email the maintainers listed under the Core section in the <a href="https://github.com/alexa-games/skills-gameon-sdk-js/blob/master/CREDITS.md">credits page</a>.</li>
+				</ul>
+				<p>When communicating within the Skills GameOn SDK community, please mind our
+				<a href="https://github.com/alexa-games/skills-gameon-sdk-js/blob/master/CODE_OF_CONDUCT.md">code of conduct</a>.</p>
+				<h2 id="getting-started">Getting Started</h2>
+				<ol>
+					<li><a href="#prerequisites">Prerequisites</a><ol>
+							<li><a href="#setting-up-gameon">Setting up GameOn</a></li>
+							<li><a href="#installing-the-skills-gameon-sdk">Installing the Skills GameOn SDK</a></li>
+						</ol>
+					</li>
+					<li><a href="#tutorials">Tutorials</a><ol>
+							<li><a href="#simple-week-long-tournament">Implementing a Simple Week-Long Tournament</a></li>
+							<li><a href="#displaying-a-leaderboard-with-alexa-presentation-language">Displaying a Leaderboard with Alexa Presentation Language (APL)</a></li>
+							<li><a href="#how-to-handle-player-names">How to Handle Player Names</a></li>
+						</ol>
+					</li>
+					<li><a href="#best-practices">Best Practices</a><ol>
+							<li><a href="#gameon-api-secret-management">GameOn API Secret Management</a></li>
+						</ol>
+					</li>
+					<li><a href="#samples">Samples</a><ol>
+							<li><a href="#alexa-skill-word-word">Alexa Skill: Word Word</a></li>
+						</ol>
+					</li>
+					<li><a href="#development">Development</a><ol>
+							<li><a href="#bootstrapping">Bootstrapping</a></li>
+							<li><a href="#building">Building</a></li>
+							<li><a href="#testing">Testing</a></li>
+							<li><a href="#documenting">Documenting</a></li>
+						</ol>
+					</li>
+				</ol>
+				<h2 id="prerequisites">Prerequisites</h2>
+				<p>To get started, you will need to create an AWS account, create an Amazon Developer account, register a game with GameOn, retrieve your Public API key, and install the Skills GameOn SDK.</p>
+				<h3 id="setting-up-gameon">Setting up GameOn</h3>
+				<h4 id="create-an-aws-account">Create an AWS account</h4>
+				<p>Create your free AWS account <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html" target="_blank">here</a>. If you already have an AWS account, you can skip this step.</p>
+				<br>
+				<h4 id="retrieve-your-aws-account-id">Retrieve your AWS account ID</h4>
+				<p>Take note of your AWS account ID for use with GameOn. Your account ID will be a 12-digit number. For more information see <a href="https://docs.aws.amazon.com/general/latest/gr/acct-identifiers.html" target="_blank">Finding Your AWS ID</a>.</p>
+				<br>
+				<h4 id="create-an-amazon-developer-console">Create an Amazon Developer Console</h4>
+				<p>Create your free Amazon Developer account <a href="https://developer.amazon.com/gameon/console/home" target="_blank">here</a>.
+				If you already have an Amazon Developer account, you can sign in instead.</p>
+				<br>
+				<h4 id="register-your-game">Register Your Game</h4>
+				<p>To register your game, go to <a href="https://developer.amazon.com/gameon/console/register" target="_blank">GameOn console</a>, click <strong>Get API Keys</strong> or <strong>Register New Game</strong>, and follow the prompts. You will need your AWS account id in this step.</p>
+				<blockquote>
+					<p><strong>NOTE</strong>: Amazon GameOn is a stand-alone service. The <strong>Developer Name</strong> and <strong>Game Title</strong> fields can be arbitrary;
+					they do not need to match anything related to your AWS or ASK setups.</p>
+				</blockquote>
+				<br>
+				<h4 id="retrieve-your-public-api-key">Retrieve Your Public API Key</h4>
+				<p>After registering your game, you will gain access to your respective GameOn Public API Key. Save this string for later use when setting up the Skills GameOn client.</p>
+				<p><img src="./media/images/gameon-api-keys.png" alt="GameOn API Keys"></p>
+				<blockquote>
+					<p><strong>NOTE</strong>: If you forget your GameOn Public API Key, you can always retrieve it from the <a href="https://developer.amazon.com/gameon/console/register">GameOn Registered Games</a> page and by clicking &quot;Details&quot; next
+					to your game in question.</p>
+				</blockquote>
+				<br>
+				<h3 id="installing-the-skills-gameon-sdk">Installing the Skills GameOn SDK</h3>
+				<p>To install the Skills GameOn SDK with NPM, use:</p>
+				<pre><code class="language-bash">npm install @alexa-games/skills-gameon-sdk</code></pre>
+				<h2 id="tutorials">Tutorials</h2>
+				<h3 id="simple-week-long-tournament">Simple Week-Long Tournament</h3>
+				<p>In this tutorial, you&#39;ll set up a simple, week-long tournament in
+					the GameOn developer console. Then, you&#39;ll learn how to interact with that
+					tournament using the Skills GameOn SDK so that your players can enter it,
+					submit scores to it, and get the leaderboard for it. Specifically, you&#39;ll
+				step through how to:</p>
+				<ol>
+					<li>Set up a Competition through the GameOn developer console.</li>
+					<li>Use the Skills GameOn SDK to:<ol>
+							<li>Register a New Player with GameOn.</li>
+							<li>Authenticate the Player.</li>
+							<li>Enter the Player into the Tournament.</li>
+							<li>Submit the Player&#39;s Score for the Match.</li>
+							<li>Reenter the Player into the Tournament&#39;s Match.</li>
+							<li>Get the Leaderboard for the Match.</li>
+						</ol>
+					</li>
+				</ol>
+				<h4 id="set-up-a-competition">Set up a Competition</h4>
+				<p>Go to <a href="https://developer.amazon.com/gameon/console/home" target="_blank">Competition Settings</a>
+				and select <code>Create Competition</code>.</p>
+				<blockquote>
+					<p><strong>NOTE</strong>: For this tutorial, use the following settings:</p>
+					<ul>
+						<li><strong>Competition Name</strong>: Any arbitrary name.</li>
+						<li><strong>Start Date</strong>: Accept the default.</li>
+						<li><strong>End Date</strong>: Set this to one week from the start date. (For a persistent leaderboard, you can set this to 100 years out.)</li>
+						<li><strong>All Other Settings</strong>: Accept the defaults.</li>
+					</ul>
+				</blockquote>
+				<p>Once the competition has been created, select &quot;View details&quot;.</p>
+				<blockquote>
+					<p><strong>NOTE</strong>: If you receive an error while creating the competition, your developer console session may have timed out. Try refreshing the page and trying again.</p>
+				</blockquote>
+				<p><img src="./media/images/gameon-competition-publish-success.png" alt="GameOn Competition Published Successfully"></p>
+				<p>Select <code>Leaderboard</code>.</p>
+				<p><img src="./media/images/gameon-select-leaderboard.png" alt="GameOn Competition Published Successfully"></p>
+				<p>Note the <code>Tournament ID</code> and the <code>Match ID</code>. You will need them so that your players
+					can enter the tournament, reenter the tournament&#39;s match, submit scores to the match,
+				and to retrieve the match&#39;s leaderboard. The <code>Tournament ID</code> can be found in the URL.</p>
+				<p><img src="./media/images/gameon-note-matchid.png" alt="GameOn Competition Published Successfully"></p>
+				<br>
+				<h4 id="register-and-authenticate-a-new-player">Register and Authenticate a New Player</h4>
+				<p>For each new user of your Alexa skill, you must first register &amp; authenticate
+					them with the GameOn service before they can enter tournaments, enter matches,
+				and submit scores.</p>
+				<p>The typical workflow is:</p>
+				<ul>
+					<li>Register a new Player with GameOn. A Player can be considered new when:<ul>
+							<li>a new user is launching your game for the first time,</li>
+							<li>your game is setting up a local multiplayer tournament, and/or</li>
+							<li>any other scenario where a new player is joining the game.</li>
+						</ul>
+					</li>
+					<li>Authenticate the Player to obtain a session token for communicating with the GameOn API
+					whenever (a) the previous session token has expired, or (b) it&#39;s a new Player.</li>
+				</ul>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { SkillsGameOnApiClient } <span class="hljs-keyword">from</span> <span class="hljs-string">'@alexa-games/skills-gameon-sdk'</span>;
+
+<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> SkillsGameOnApiClient();
+
+<span class="hljs-keyword">const</span> player = <span class="hljs-keyword">await</span> client.initializeNewPlayer({
+    gameApiKey: <span class="hljs-string">'&lt;GAMEON_PUBLIC_API_KEY&gt;'</span>, <span class="hljs-comment">// Your Public API Key you receive when you register your game with GameOn.</span>
+    appBuildType: <span class="hljs-string">'development'</span> <span class="hljs-comment">// GameOn API requires either 'development' or 'release', but it's only used for their metrics.</span>
+});</code></pre>
+				<p>The method will return a <code>Player</code> with structure:</p>
+				<pre><code class="language-javascript">{
+    <span class="hljs-string">"externalPlayerId"</span>: <span class="hljs-string">"&lt;GAMEON_PLAYER_ID&gt;"</span>,
+    <span class="hljs-string">"playerToken"</span>: <span class="hljs-string">"&lt;GAMEON_PLAYER_TOKEN&gt;"</span>,
+    <span class="hljs-string">"sessionId"</span>: <span class="hljs-string">"&lt;GAMEON_PLAYER_SESSION_ID&gt;"</span>,
+    <span class="hljs-string">"sessionApiKey"</span>: <span class="hljs-string">"&lt;GAMEON_PLAYER_SESSION_API_KEY&gt;"</span>,
+    <span class="hljs-string">"sessionExpirationDate"</span>: <span class="hljs-string">"&lt;GAMEON_PLAYER_SESSION_EXPIRATION_DATE&gt;"</span>
+}</code></pre>
+				<br>
+				<blockquote>
+					<p><strong>NOTE</strong>: If you are interested in creating a player with a profile (name, color, and avatar), you can use the <code>#initializeNewAugmentedPlayer</code>
+						method that is available with the <code>SkillsGameOnApiClient</code>. This method is similar to <code>#initializeNewPlayer</code> except that it also
+						takes in an additional <code>PlayerProfileGenerator</code> as a parameter. To instantiate a <code>PlayerProfileGenerator</code>, please see the section
+					<a href="#how-to-handle-player-names">How to Handle Player Names</a>.</p>
+				</blockquote>
+				<br>
+				<blockquote>
+					<p><strong>NOTE</strong>: For the rest of this tutorial, when you see <code>player</code>, it is referring to the player object
+					that we created in this step.</p>
+				</blockquote>
+				<br>
+				<br>
+				<blockquote>
+					<p><strong>NOTE</strong>: We also provide a convenience method for refreshing your Player&#39;s
+					GameOn session. The call will looking something like:</p>
+				</blockquote>
+				<pre><code class="language-typescript"><span class="hljs-keyword">await</span> client.refreshPlayerSession({
+    gameApiKey: <span class="hljs-string">'&lt;GAMEON_PUBLIC_API_KEY&gt;'</span>, <span class="hljs-comment">// Your Public API Key you receive when you register your game with GameOn.</span>
+    appBuildType: <span class="hljs-string">'development'</span>, <span class="hljs-comment">// GameOn API requires either 'development' or 'release', but it's only used for their metrics.</span>
+    player: player
+});</code></pre>
+				<br>
+				<h4 id="enter-the-player-into-the-game-s-tournament">Enter the Player into the Game&#39;s Tournament</h4>
+				<p>A player must first enter the Tournament before they can enter matches
+				and submit their scores.</p>
+				<pre><code class="language-typescript"><span class="hljs-keyword">await</span> client.enterTournamentForPlayer({
+    tournamentId: <span class="hljs-string">'&lt;GAMEON_TOURNAMENT_ID&gt;'</span>, <span class="hljs-comment">// The Tournament ID that is associated with your game.</span>
+    player: player
+});</code></pre>
+				<br>
+				<h4 id="enter-the-player-into-the-tournament-s-match">Enter the Player into the Tournament&#39;s Match</h4>
+				<p>Before a player can submit a score to a match, they must first join said
+				match. To do that, call:</p>
+				<pre><code class="language-typescript"><span class="hljs-keyword">await</span> client.enterMatchForPlayer({
+    matchId: <span class="hljs-string">'&lt;GAMEON_MATCH_ID&gt;'</span>, <span class="hljs-comment">// The Match Id that is associated with your tournament.</span>
+    player: player
+});</code></pre>
+				<br>
+				<h4 id="submit-the-player-s-score">Submit the Player&#39;s Score</h4>
+				<p>Now the player can submit their score to the tournaments&#39;s match, like so:</p>
+				<pre><code class="language-typescript"><span class="hljs-keyword">await</span> client.submitScoreForPlayer({
+    matchId: <span class="hljs-string">'&lt;GAMEON_MATCH_ID&gt;'</span>,
+    submitScoreRequest: { score: <span class="hljs-number">10</span> },
+    player: player
+});</code></pre>
+				<blockquote>
+					<p><strong>NOTE</strong>: You must <strong>always</strong> enter the match before submitting a score.</p>
+				</blockquote>
+				<br>
+				<h4 id="get-the-leaderboard">Get the Leaderboard</h4>
+				<p>To retrieve just the top scorers on the leaderboard, you can call:</p>
+				<pre><code class="language-typescript"><span class="hljs-keyword">await</span> client.getMatchLeaderboardForPlayer({
+    matchId: <span class="hljs-string">'&lt;GAMEON_MATCH_ID&gt;'</span>,
+    player: player
+});</code></pre>
+				<p>The method will return a <code>GetMatchLeaderboardResponse</code> with structure:</p>
+				<pre><code class="language-javascript">{
+    <span class="hljs-attr">leaderboard</span>: [
+        {
+            <span class="hljs-attr">externalPlayerId</span>: <span class="hljs-string">"&lt;GAMEON_PLAYER_ID_1&gt;"</span>,
+            <span class="hljs-attr">playerName</span>: <span class="hljs-string">"player278"</span>,
+            <span class="hljs-attr">score</span>: <span class="hljs-number">70</span>,
+            <span class="hljs-attr">rank</span>: <span class="hljs-number">1</span>
+        },
+        {
+            <span class="hljs-attr">externalPlayerId</span>: <span class="hljs-string">"&lt;GAMEON_PLAYER_ID_2&gt;"</span>,
+            <span class="hljs-attr">playerName</span>: <span class="hljs-string">"player5846"</span>,
+            <span class="hljs-attr">score</span>: <span class="hljs-number">50</span>,
+            <span class="hljs-attr">rank</span>: <span class="hljs-number">2</span>
+        }
+    ],
+    <span class="hljs-attr">leaderboardStat</span>: <span class="hljs-string">"points"</span>,
+    <span class="hljs-attr">next</span>: <span class="hljs-string">"/matches/&lt;GAMEON_MATCH_ID&gt;/leaderboard?limit=2&amp;cursor=&lt;CURSOR_ID&gt;"</span>
+}</code></pre>
+				<p>To get the player&#39;s tournament rank and their neighbors on the leaderboard, call:</p>
+				<pre><code class="language-typescript"><span class="hljs-keyword">await</span> client.getMatchLeaderboardForPlayer({
+    matchId: <span class="hljs-string">'&lt;GAMEON_MATCH_ID&gt;'</span>,
+    player: player,
+    currentPlayerNeighbors: <span class="hljs-number">5</span> <span class="hljs-comment">// Note: GameOn will not accept a value &lt;= 0.</span>
+});</code></pre>
+				<p>The method will return a <code>GetMatchLeaderboardResponse</code> with structure:</p>
+				<pre><code class="language-javascript">{
+    currentPlayer: {
+        externalPlayerId: "&lt;CURRENT_PLAYER_ID&gt;",
+        playerName: "player5846",
+        score: 50,
+        rank: 2
+    },
+    leaderboardStat: "kills",
+    neighbors: [
+        {
+            externalPlayerId: "&lt;GAMEON_PLAYER_ID_1&gt;",
+            playerName: "player278",
+            score: 70,
+            rank": 1
+        },
+        {
+            externalPlayerId: "&lt;CURRENT_PLAYER_ID&gt;",
+            playerName: "player5846",
+            score: 50,
+            isCurrentPlayer: true,
+            rank": 2
+        },
+        {
+            externalPlayerId: "&lt;GAMEON_PLAYER_ID_2&gt;",
+            playerName: "player1210",
+            score: 20,
+            rank: 3
+        }
+    ]
+}</code></pre>
+				<br>
+				<h4 id="get-the-current-player-s-score">Get the Current Player&#39;s Score</h4>
+				<p>To get the current player&#39;s score and rank, you can call our convenience method:</p>
+				<pre><code class="language-typescript"><span class="hljs-keyword">await</span> client.getPlayerScore(<span class="hljs-string">'&lt;GAMEON_MATCH_ID&gt;'</span>, player);</code></pre>
+				<p>The method will return a <code>PlayerScore</code> with structure:</p>
+				<pre><code class="language-javascript">{
+    <span class="hljs-attr">matchId</span>: <span class="hljs-string">"&lt;GAMEON_MATCH_ID&gt;"</span>,
+    <span class="hljs-attr">score</span>: <span class="hljs-number">20</span>,
+    <span class="hljs-attr">rank</span>: <span class="hljs-number">1</span>,
+    <span class="hljs-attr">ordinal</span>: <span class="hljs-string">"first"</span>
+}</code></pre>
+				<br>
+				<h3 id="displaying-a-leaderboard-with-alexa-presentation-language">Displaying a Leaderboard with Alexa Presentation Language</h3>
+				<p>This is a tutorial section that illustrates how you can render a leaderboard from your skill onto Alexa devices that have screens.
+				Note that this is just a tutorial and a bootstrapping procedure, so it is not the absolute way to do this.</p>
+				<p>Since this method uses the Alexa Presentation Language (APL) to render the leaderboards,
+				you must ensure that your skill is configured to support APL by following the instructions <a href="https://developer.amazon.com/docs/alexa-presentation-language/apl-support-for-your-skill.html">here</a>.</p>
+				<p>The Skills GameOn SDK includes a utility method to render an APL directive that will display your match&#39;s leaderboard.
+				This utility is a great starting point for those who want to enhance their skill with visual elements.</p>
+				<p>To show the top 5 scores of a match, first call the getMatchLeaderboardForPlayer method in the SkillsGameOnApiClient to get your leaderboard data.
+				Pass the data into this function to generate APL.</p>
+				<p>The resulting leaderboardDirective is a well-formed <code>Alexa.Presentation.APL.RenderDocument</code> directive that you can send in your skill&#39;s response.</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> SkillsGameOnApiClient();
+<span class="hljs-keyword">const</span> leaderboard = client.getCombinationLeaderboards({ player, <span class="hljs-attr">matchId</span>: <span class="hljs-string">'&lt;GAMEON_MATCH_ID&gt;'</span>, topScoresLmit, playerNeighborsLimit });
+<span class="hljs-keyword">const</span> renderOptions = { <span class="hljs-attr">backgroundImageUrl</span>: <span class="hljs-string">'&lt;IMAGE_URL&gt;'</span> };
+<span class="hljs-keyword">const</span> playerProfileGenerator = PlayerProfileGeneratorBuilder.getGenerator({ <span class="hljs-attr">avatarBaseUrl</span>: <span class="hljs-string">'&lt;AVATAR_BASE_URL&gt;'</span> });
+<span class="hljs-keyword">const</span> leaderboardDirective = renderLeaderboard(player, leaderboard, renderOptions, playerProfileGenerator); <span class="hljs-comment">// #renderLeaderboard is part of the @alexa-games/skills-gameon-sdk package.</span></code></pre>
+				<br>
+				<h3 id="how-to-handle-player-names">How to Handle Player Names</h3>
+				<h4 id="optional-player-profile-generation">Optional: Player Profile Generation</h4>
+				<p>The Skills GameOn SDK includes mechanisms to generate a unique name and avatar for your players.  These two values together are referred to as the player profile.</p>
+				<p>The player name is a string such as &quot;Jim from Seattle&quot; or something random such as &quot;Grumpy Kowolla.&quot;  The avatar is a URI that references an image that you previously generated and hosted on S3 or another website.</p>
+				<p>The simplest way to create a player profile is with an instance of PlayerProfileGenerator which you retrieve from PlayerProfileGeneratorBuilder.  For example:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> generator = PlayerProfileGenerator.getGenerator({
+    <span class="hljs-attr">locale</span>: <span class="hljs-string">"en-US"</span>,
+    <span class="hljs-attr">avatarBaseUrl</span>: <span class="hljs-string">"https://example.com/myskillarea/avatars"</span>,
+    <span class="hljs-attr">numberOfUniqueAvatars</span>: <span class="hljs-number">50</span>
+});</code></pre>
+				<p>Once you have a generator, get a random profile such as:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> randomProfile = generator.getRandomPlayerProfile();</code></pre>
+				<p>Or a unique but consistent profile such as:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> uniqueProfile = generator.getPlayerProfileFromId(playerId);</code></pre>
+				<p>The generator returns this:</p>
+				<pre><code class="language-javascript">{
+    <span class="hljs-attr">name</span>: <span class="hljs-string">"Grumpy Kowolla"</span>,
+    <span class="hljs-attr">avatar</span>: <span class="hljs-string">"https://example.com/myskillarea/avatars/34.png"</span>
+}</code></pre>
+				<p>Use these properties with other leaderboard APIs to store the generated name.  Because the avatar URL cannot
+					be stored with the leaderboard, use
+					<strong>generator.getPlayerProfileFromId(playerId)</strong>
+				to get a consistent avatar for that player.</p>
+				<p>If you don&#39;t need both an avatar URL and a name for your skill, you may generate these properties separately using
+				<strong>PlayerAvatarUriGenerator</strong> and <strong>PlayerNameGenerator</strong> respectively.</p>
+				<p>Of course, you can create names and avatars using other mechanisms of your choosing.</p>
+				<br>
+				<h4 id="name-generation">Name Generation</h4>
+				<p>You may use <strong>PlayerNameGenerator</strong> to generate just a name for your player such as:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> generator = PlayerNameGeneratorBuilder.getGenerator(<span class="hljs-string">'en-US'</span>);
+
+<span class="hljs-comment">// Generate consistent name from hash.</span>
+<span class="hljs-keyword">const</span> hash = getHash(id);
+<span class="hljs-keyword">const</span> name1 = generator.getFromHash(hash);
+
+<span class="hljs-comment">// Generate consistent name from id.</span>
+<span class="hljs-keyword">const</span> name2 = generator.getFromId(id);
+
+<span class="hljs-comment">// Generate random name.</span>
+<span class="hljs-keyword">const</span> name3 = generator.getRandom();</code></pre>
+				<p>The first parameter, <em>locale</em>, indicates the preferred language of the word list. Currently only English
+					words are selected regardless of the provided locale. This gives us the ability to add support for new
+				languages in the future without changing the API signature.</p>
+				<br>
+				<h4 id="avatar-uri-generation">Avatar URI Generation</h4>
+				<p>You may use <strong>PlayerAvatarUriGenerator</strong> to generate just the avatar URI for you player.</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> generator = PlayerAvatarUriGeneratorBuilder.getGenerator({
+                    <span class="hljs-attr">avatarBaseUrl</span>: <span class="hljs-string">"https://example.com/myskillarea/avatars"</span>,
+                    <span class="hljs-attr">numberOfUniqueAvatars</span>: <span class="hljs-number">50</span>
+                });
+
+<span class="hljs-comment">// Generate consistent avatar image from hash.</span>
+<span class="hljs-keyword">const</span> hash = getHash(id);
+<span class="hljs-keyword">const</span> uri1 = generator.getFromHash(hash);
+
+<span class="hljs-comment">// Generate consistent avatar image from id.</span>
+<span class="hljs-keyword">const</span> uri2 = generator.getFromId(id);
+
+<span class="hljs-comment">// Select a random avatar image.</span>
+<span class="hljs-keyword">const</span> uri3 = generator.getRandom();</code></pre>
+				<br>
+				<h4 id="avatar-generation">Avatar Generation</h4>
+				<p>The SDK includes a CLI tool that demonstrates one way to generate images that you could use as avatars.
+					You will likely want images unique to your skill and branding, but these images can serve as placeholders
+				or just as illustration.</p>
+				<pre><code class="language-stdout">npm install gridy-avatars convert-svg-to-png
+npx avatar-maker</code></pre>
+				<p>This will generate 500 avatars in a directory called <strong>avatars</strong>.  Use the --help option for
+				other options:</p>
+				<pre><code class="language-stdout">npx avatar-maker -- --help
+
+This CLI tool will generate a 100x100 pixel image that can be used as a player avatar.
+By default, the script will create 500 images in the avatars directory.
+You may specify different values in the first two parameters of the script. For example:
+
+       npx avatar-maker -- 50 avatar1
+
+Will create 50 images in the avatar1 directory.</code></pre>
+				<p>Here is the output of the script:</p>
+				<pre><code class="language-stdout">npx avatar-maker
+
+Generating 500 avatars in directory &#39;avatar&#39;
+Creating avatars
+Saving file ${CWD}/avatars/0.png from 756603
+Saving file ${CWD}/avatars/1.png from 114505
+...
+Saving file ${CWD}/avatars/498.png from 772043
+Saving file ${CWD}/avatars/499.png from 361160</code></pre>
+				<br>
+				<h2 id="best-practices">Best Practices</h2>
+				<h3 id="gameon-api-secret-management">GameOn API Secret Management</h3>
+				<p>Rather than exposing your GameOn Public API key in cleartext in your source code, we
+					strongly recommend using a service such as AWS Key Management Service to keep
+				your key secret &amp; safe.</p>
+				<p>There are several strategies to do this, but we&#39;re only going to highlight two.</p>
+				<blockquote>
+					<p><strong>NOTE</strong>: The following tutorials assume that you&#39;re using AWS Lambda to host your skill.</p>
+				</blockquote>
+				<br>
+				<h4 id="using-environment-variable-encryption">Using Environment Variable Encryption</h4>
+				<p>This strategy is much simpler than the next. It&#39;s the preferred one
+					if you don&#39;t have any plans to share secrets with other developers, or if
+				you don&#39;t have plans to set up any kind of multi-stage pipeline.</p>
+				<p>When you create or update Lambda functions that use environment variables,
+					AWS Lambda encrypts them using the AWS Key Management Service. When your
+					Lambda function is invoked, those values are decrypted and made available
+				to the Lambda code.</p>
+				<p>Check out the AWS documentation on <a href="https://docs.aws.amazon.com/lambda/latest/dg/env_variables.html#env_encrypt" target="_blank">Environment Variable Encryption</a>
+				for instructions on how to use this strategy.</p>
+				<br>
+				<h4 id="using-an-encrypted-secrets-file">Using an Encrypted Secrets File</h4>
+				<p>This strategy will create an encrypted secrets file.
+					This can be fully automated (no reason to abbreviate environment variables) and can
+				be safely checked into source code and shared between developers.</p>
+				<p>In this section we&#39;ll:</p>
+				<ol>
+					<li>Create a KMS key with the AWS CLI.</li>
+					<li>Encrypt your GameOn API secret file with the AWS CLI.</li>
+					<li>Upload your encrypted secret file to AWS S3 with the AWS CLI.</li>
+					<li>Decrypt your secret file in your skill at runtime with our tool.</li>
+				</ol>
+				<h5 id="1-create-the-aws-kms-key">1. Create the AWS KMS Key</h5>
+				<p>The AWS KMS key is necessary to encrypt/decrypt files with the AWS KMS service.</p>
+				<h6 id="create-the-aws-kms-key-policy-file">Create the AWS KMS Key Policy File</h6>
+				<p>We need to define a KMS Key policy that gives your skill&#39;s Lambda function
+				access to the AWS KMS key to perform the decryption operation at runtime.</p>
+				<p>Create a file called <code>kmsPolicy.json</code>, and put the following inside:</p>
+				<pre><code class="language-json">{
+  <span class="hljs-attr">"Id"</span>: <span class="hljs-string">"key-policy-gameon"</span>,
+  <span class="hljs-attr">"Version"</span>: <span class="hljs-string">"2012-10-17"</span>,
+  <span class="hljs-attr">"Statement"</span>: [
+    {
+      <span class="hljs-attr">"Sid"</span>: <span class="hljs-string">"Enable IAM User Permissions"</span>,
+      <span class="hljs-attr">"Effect"</span>: <span class="hljs-string">"Allow"</span>,
+      <span class="hljs-attr">"Principal"</span>: {
+        <span class="hljs-attr">"AWS"</span>: <span class="hljs-string">"arn:aws:iam::YOUR_SKILL_AWS_ACCOUNT_ID:root"</span>
+      },
+      <span class="hljs-attr">"Action"</span>: <span class="hljs-string">"kms:*"</span>,
+      <span class="hljs-attr">"Resource"</span>: <span class="hljs-string">"*"</span>
+    },
+    {
+      <span class="hljs-attr">"Sid"</span>: <span class="hljs-string">"Allow standard access"</span>,
+      <span class="hljs-attr">"Effect"</span>: <span class="hljs-string">"Allow"</span>,
+      <span class="hljs-attr">"Principal"</span>: {
+        <span class="hljs-attr">"AWS"</span>: <span class="hljs-string">"arn:aws:iam::YOUR_SKILL_AWS_ACCOUNT_ID:user/YOUR_SKILL_MANAGEMENT_IAM_USER_NAME"</span>
+      },
+      <span class="hljs-attr">"Action"</span>: [
+        <span class="hljs-string">"kms:Encrypt"</span>,
+        <span class="hljs-string">"kms:Decrypt"</span>,
+        <span class="hljs-string">"kms:ReEncrypt*"</span>,
+        <span class="hljs-string">"kms:GenerateDataKey*"</span>,
+        <span class="hljs-string">"kms:DescribeKey"</span>
+      ],
+      <span class="hljs-attr">"Resource"</span>: <span class="hljs-string">"*"</span>
+    },
+    {
+      <span class="hljs-attr">"Sid"</span>: <span class="hljs-string">"Allow decrypt-only"</span>,
+      <span class="hljs-attr">"Effect"</span>: <span class="hljs-string">"Allow"</span>,
+      <span class="hljs-attr">"Principal"</span>: {
+        <span class="hljs-attr">"AWS"</span>: <span class="hljs-string">"arn:aws:iam::YOUR_SKILL_AWS_ACCOUNT_ID:role/YOUR_SKILL_LAMBDA_FUNC_EXECUTION_ROLE"</span>
+      },
+      <span class="hljs-attr">"Action"</span>: <span class="hljs-string">"kms:Decrypt"</span>,
+      <span class="hljs-attr">"Resource"</span>: <span class="hljs-string">"*"</span>
+    }
+  ]
+}</code></pre>
+				<p>Be sure to replace the following stubs with your values:</p>
+				<ul>
+					<li><code>YOUR_SKILL_AWS_ACCOUNT_ID</code>: The AWS Account ID where the skill is
+					deployed.</li>
+					<li><code>YOUR_SKILL_MANAGEMENT_IAM_USER_NAME</code>: The name of the AWS IAM User
+					that is deploying the skill&#39;s stack.</li>
+					<li><code>YOUR_SKILL_LAMBDA_FUNC_EXECUTION_ROLE</code>: The execution AWS IAM Role
+					for your skill&#39;s Lambda function.</li>
+				</ul>
+				<br>
+				<h6 id="create-the-aws-kms-key-with-the-aws-cli">Create the AWS KMS Key with the AWS CLI</h6>
+				<p>Run the following AWS CLI commands:</p>
+				<pre><code class="language-stdout">-&gt; aws kms create-key --policy file://kmsPolicy.json --profile YOUR_SKILL_MANAGEMENT_IAM_USER_NAME --region us-east-1
+
+{
+    &quot;KeyMetadata&quot;: {
+        &quot;AWSAccountId&quot;: &quot;YOUR_SKILL_MANAGEMENT_IAM_USER_NAME&quot;,
+        &quot;KeyId&quot;: &quot;YOUR_AWS_KMS_KEY_ID&quot;,
+        &quot;Arn&quot;: &quot;arn:aws:kms:us-east-1:YOUR_SKILL_AWS_ACCOUNT_ID:key/YOUR_AWS_KMS_KEY_ID&quot;,
+        &quot;CreationDate&quot;: 1552500200,
+        &quot;Enabled&quot;: true,
+        &quot;Description&quot;: &quot;&quot;,
+        &quot;KeyUsage&quot;: &quot;ENCRYPT_DECRYPT&quot;,
+        &quot;KeyState&quot;: &quot;Enabled&quot;,
+        &quot;Origin&quot;: &quot;AWS_KMS&quot;,
+        &quot;KeyManager&quot;: &quot;CUSTOMER&quot;
+    }
+}
+
+-&gt; aws kms create-alias --alias-name alias/GameOnApiKey --target-key-id YOUR_AWS_KMS_KEY_ID</code></pre>
+				<br>
+				<h5 id="2-encrypt-your-gameon-api-secret">2. Encrypt your GameOn API Secret</h5>
+				<h6 id="create-the-cleartext-file">Create the Cleartext File</h6>
+				<p>Create the file <code>cleartext.json</code> that has a JSON structure with your
+				GameOn Public API Key inside. Like this:</p>
+				<pre><code class="language-json">{
+    <span class="hljs-attr">"gameOnApiKey"</span>: <span class="hljs-string">"YOUR_GAMEON_API_KEY"</span>
+}</code></pre>
+				<br>
+				<h6 id="encrypt-the-cleartext-file-with-the-aws-cli">Encrypt the Cleartext File with the AWS CLI</h6>
+				<pre><code class="language-bash">-&gt; aws kms encrypt \
+--key-id YOUR_AWS_KMS_KEY_ID \
+--plaintext fileb://cleartext.json \
+--query CiphertextBlob \
+--output text \
+--profile YOUR_SKILL_MANAGEMENT_IAM_USER_NAME \
+--region us-east-1 \
+| base64 --decode &gt; encrypted.txt</code></pre>
+				<p>This will output an <code>encrypted.txt</code> file.</p>
+				<br>
+				<h5 id="3-upload-encrypted-gameon-api-secret">3. Upload Encrypted GameOn API Secret</h5>
+				<p>Now you&#39;ll upload your encrypted secret to AWS S3 so that your skill can
+				refer to it when using the AWS KMS service at runtime.</p>
+				<h6 id="create-aws-s3-bucket-with-the-aws-cli">Create AWS S3 Bucket with the AWS CLI</h6>
+				<p>You&#39;ll need an AWS S3 Bucket to hold your encrypted file.</p>
+				<pre><code class="language-stdout">-&gt; aws s3 create-bucket --bucket YOUR_SKILL_NAME --profile YOUR_SKILL_MANAGEMENT_IAM_USER_NAME --region us-east-1
+
+{
+    &quot;Location&quot;: &quot;/YOUR_SKILL_NAME&quot;
+}</code></pre>
+				<br>
+				<h6 id="upload-the-encrypted-file-to-s3-with-the-aws-cli">Upload the Encrypted File to S3 with the AWS CLI</h6>
+				<pre><code class="language-stdout">-&gt; aws s3 cp encrypted.txt s3://YOUR_SKILL_NAME/gameon/secret.txt --profile YOUR_SKILL_MANAGEMENT_IAM_USER_NAME --region us-east-1
+
+upload: ./encrypted.txt to s3://YOUR_SKILL_NAME/gameon/secret.txt</code></pre>
+				<blockquote>
+					<p><strong>NOTE</strong>: Your file&#39;s URL will be <code>https://s3.amazonaws.com/YOUR_SKILL_NAME/gameon/secret.txt</code>.
+					Remember it because you&#39;ll need it for the next step.</p>
+				</blockquote>
+				<br>
+				<h5 id="4-decrypt-your-gameon-api-secret">4. Decrypt your GameOn API Secret</h5>
+				<p>Now, in your skill, it&#39;s time to decrypt your GameOn API Secret so that you
+					can make calls to the GameOn service. We&#39;ve created a tool for you
+				to use in your skill&#39;s code, and now we&#39;ll show you how to use it.</p>
+				<h6 id="decrypt-your-gameon-api-secret-with-our-tool">Decrypt your GameOn API Secret with our Tool</h6>
+				<p>In your skill&#39;s code, you can use our <code>KmsDecryptionHelper</code> to get your
+				GameOn Public API Key. Here&#39;s an example of its use in TypeScript:</p>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { KmsDecryptionHelper } <span class="hljs-keyword">from</span> <span class="hljs-string">'@alexa-games/skills-gameon-sdk'</span>;
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getGameOnApiKey</span>(<span class="hljs-params"></span>): <span class="hljs-title">Promise</span>&lt;<span class="hljs-title">string</span>&gt; </span>{
+    <span class="hljs-keyword">const</span> secretFileUrl = <span class="hljs-string">'https://s3.amazonaws.com/YOUR_SKILL_NAME/gameon/secret.txt'</span>;
+    <span class="hljs-keyword">const</span> kmsKeyRegion = <span class="hljs-string">'us-east-1'</span>;
+
+    <span class="hljs-keyword">const</span> secrets = <span class="hljs-keyword">await</span> KmsDecryptionHelper.getSecrets(secretFileUrl, kmsKeyRegion);
+
+    <span class="hljs-keyword">return</span> secrets[<span class="hljs-string">'gameOnApiKey'</span>];
+}</code></pre>
+				<p>And that&#39;s it. You are now safely managing your GameOn Public API Key.</p>
+				<br>
+				<h2 id="samples">Samples</h2>
+				<h3 id="alexa-skill-word-word">Alexa Skill: Word Word</h3>
+				<p>Word Word is a fun tongue-twisting challenge. When playing, Alexa will give you a silly, random word. Simply repeat the
+					word as many times as you can as fast as you can. Then see how you rank against the daily leaderboard! The Word Word
+					skill is live, so you can enable it on your Alexa devices and play it today. More information about the skill is also
+				on the <a href="https://www.amazon.com/Amazon-Word/dp/B07PQYDDTJ/">Alexa Skills Store</a>.</p>
+				<h4 id="code-sample-word-word-lite">Code Sample: Word Word Lite</h4>
+				<p>Word Word Lite is a bare-bones sample skill inspired by the official &#39;Word Word&#39; game. The code sample can be found in in the <code>samples</code> directory.
+				To deploy this sample in your Alexa developer account, you will need to complete following steps:</p>
+				<ol>
+					<li>Update <code>gameConstants.js</code> with the matchId, tournamentId, appBuildType, and gameApiKey</li>
+					<li>Build the skill and deploy to your preferred infrastructure (e.g. AWS Lambda, etc)</li>
+				</ol>
+				<h4 id="skill-flow">Skill Flow</h4>
+				<ol>
+					<li><p>Launch</p>
+						<p>Skill will launch and check if the player has been created. If the player has not been created it will register a new player with GameOn.
+						Otherwise, the skill will check if it needs to refresh the player&#39;s session with the GameOn services.</p>
+					</li>
+					<li><p>Challenge</p>
+						<p>Immediately after launch, the game will move to the challenge state where it gets the challenge word and gives the player
+							instructions. The user utterance is mapped to the PLAY_GAME_INTENT which has 52 slot values. An example of this model
+						can be found at <code>samples/word-word-lite/models/en-US.json</code>.</p>
+					</li>
+					<li><p>Result</p>
+						<p>The score is calculated by the skill code and submitted to GameOn.
+						Updated leaderboards are requested from GameOn, parsed and returned to the user.</p>
+					</li>
+				</ol>
+				<h4 id="leaderboards">Leaderboards</h4>
+				<p>Here some screenshots of Word Word&#39;s leaderboard. It uses the Alexa Presentation
+				Language (APL) for rendering, and GameOn for the player data.</p>
+				<p><img src="./media/images/word-word-screenshot.png" alt="Word Word Leaderboard"></p>
+				<h2 id="development">Development</h2>
+				<h3 id="lerna">Lerna</h3>
+				<p>This repository uses Lerna, a tool for managing projects with multiple packages.</p>
+				<p>Link: <a href="https://lernajs.io/">https://lernajs.io/</a></p>
+				<h3 id="bootstrapping">Bootstrapping</h3>
+				<p>Clone the repository and run <code>npm install</code>. This will install dependencies and bootstrap the Lerna project.</p>
+				<h3 id="building">Building</h3>
+				<p>To build every package in this project, go to the root of the repository and run <code>npm run build</code>.</p>
+				<h3 id="testing">Testing</h3>
+				<p>To test every package in this project, go to the root of the repository and run <code>npm run test</code>.</p>
+				<h3 id="documenting">Documenting</h3>
+				<p>The documentation is generated from doc comments with <a href="https://typedoc.org/">TypeDoc</a>. Comments support Markdown format, which means full examples and links can be included.</p>
+				<h4 id="generating-the-docs">Generating the Docs</h4>
+				<p>From the root of the project, run <code>npm run document</code></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="enums/tournamenttype.html" class="tsd-kind-icon">Tournament<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/apiclient.html" class="tsd-kind-icon">Api<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/apiclientfactory.html" class="tsd-kind-icon">Api<wbr>Client<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/defaultapiclient.html" class="tsd-kind-icon">Default<wbr>Api<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/gameonapiclient.html" class="tsd-kind-icon">Game<wbr>OnApi<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/kmsdecryptionhelper.html" class="tsd-kind-icon">Kms<wbr>Decryption<wbr>Helper</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/namelists.html" class="tsd-kind-icon">Name<wbr>Lists</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/playeravatarurigenerator.html" class="tsd-kind-icon">Player<wbr>Avatar<wbr>Uri<wbr>Generator</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/playercolorgenerator.html" class="tsd-kind-icon">Player<wbr>Color<wbr>Generator</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/playernamegenerator.html" class="tsd-kind-icon">Player<wbr>Name<wbr>Generator</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/playernamegeneratorbuilder.html" class="tsd-kind-icon">Player<wbr>Name<wbr>Generator<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/playerprofilegenerator.html" class="tsd-kind-icon">Player<wbr>Profile<wbr>Generator</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/playerprofilegeneratorbuilder.html" class="tsd-kind-icon">Player<wbr>Profile<wbr>Generator<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/playerscore.html" class="tsd-kind-icon">Player<wbr>Score</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/simplephraseprovider.html" class="tsd-kind-icon">Simple<wbr>Phrase<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/skillsgameonapiclient.html" class="tsd-kind-icon">Skills<wbr>Game<wbr>OnApi<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/addattemptsrequest.html" class="tsd-kind-icon">Add<wbr>Attempts<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/addattemptsresponse.html" class="tsd-kind-icon">Add<wbr>Attempts<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/addplayertournamentrequest.html" class="tsd-kind-icon">Add<wbr>Player<wbr>Tournament<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/addplayertournamentresponse.html" class="tsd-kind-icon">Add<wbr>Player<wbr>Tournament<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/apiclientmessage.html" class="tsd-kind-icon">Api<wbr>Client<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/apiclientrequest.html" class="tsd-kind-icon">Api<wbr>Client<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/apiclientresponse.html" class="tsd-kind-icon">Api<wbr>Client<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/apiconfiguration.html" class="tsd-kind-icon">Api<wbr>Configuration</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/augmentedplayer.html" class="tsd-kind-icon">Augmented<wbr>Player</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/authplayerparams.html" class="tsd-kind-icon">Auth<wbr>Player<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/authplayerrequest.html" class="tsd-kind-icon">Auth<wbr>Player<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/authplayerresponse.html" class="tsd-kind-icon">Auth<wbr>Player<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/claimprizelistrequest.html" class="tsd-kind-icon">Claim<wbr>Prize<wbr>List<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/claimprizelistresponse.html" class="tsd-kind-icon">Claim<wbr>Prize<wbr>List<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/claimprizelistresponseclaimedprize.html" class="tsd-kind-icon">Claim<wbr>Prize<wbr>List<wbr>Response<wbr>Claimed<wbr>Prize</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/combinationleaderboard.html" class="tsd-kind-icon">Combination<wbr>Leaderboard</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="interfaces/displayableplayer.html" class="tsd-kind-icon">Displayable<wbr>Player</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/entermatchparams.html" class="tsd-kind-icon">Enter<wbr>Match<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/entermatchrequest.html" class="tsd-kind-icon">Enter<wbr>Match<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/entermatchresponse.html" class="tsd-kind-icon">Enter<wbr>Match<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/entertournamentparams.html" class="tsd-kind-icon">Enter<wbr>Tournament<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/entertournamentrequest.html" class="tsd-kind-icon">Enter<wbr>Tournament<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/entertournamentresponse.html" class="tsd-kind-icon">Enter<wbr>Tournament<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/fulfillprizelistrequest.html" class="tsd-kind-icon">Fulfill<wbr>Prize<wbr>List<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/fulfillprizelistresponse.html" class="tsd-kind-icon">Fulfill<wbr>Prize<wbr>List<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/fulfillprizelistresponsefulfilledprize.html" class="tsd-kind-icon">Fulfill<wbr>Prize<wbr>List<wbr>Response<wbr>Fulfilled<wbr>Prize</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getcombinationleaderboardsparams.html" class="tsd-kind-icon">Get<wbr>Combination<wbr>Leaderboards<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getleaderboardparams.html" class="tsd-kind-icon">Get<wbr>Leaderboard<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchdetailsparams.html" class="tsd-kind-icon">Get<wbr>Match<wbr>Details<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchdetailsresponse.html" class="tsd-kind-icon">Get<wbr>Match<wbr>Details<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchdetailsresponseawardedprize.html" class="tsd-kind-icon">Get<wbr>Match<wbr>Details<wbr>Response<wbr>Awarded<wbr>Prize</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchdetailsresponseprizebundle.html" class="tsd-kind-icon">Get<wbr>Match<wbr>Details<wbr>Response<wbr>Prize<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchdetailsresponsetournamentdetails.html" class="tsd-kind-icon">Get<wbr>Match<wbr>Details<wbr>Response<wbr>Tournament<wbr>Details</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchleaderboardresponse.html" class="tsd-kind-icon">Get<wbr>Match<wbr>Leaderboard<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchleaderboardresponseleaderboarditem.html" class="tsd-kind-icon">Get<wbr>Match<wbr>Leaderboard<wbr>Response<wbr>Leaderboard<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchlistresponse.html" class="tsd-kind-icon">Get<wbr>Match<wbr>List<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchlistresponsematch.html" class="tsd-kind-icon">Get<wbr>Match<wbr>List<wbr>Response<wbr>Match</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchlistresponseplayergeneratedmatch.html" class="tsd-kind-icon">Get<wbr>Match<wbr>List<wbr>Response<wbr>Player<wbr>Generated<wbr>Match</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchlistresponseprizebundle.html" class="tsd-kind-icon">Get<wbr>Match<wbr>List<wbr>Response<wbr>Prize<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getmatchesparams.html" class="tsd-kind-icon">Get<wbr>Matches<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getplayertournamentdetailsresponse.html" class="tsd-kind-icon">Get<wbr>Player<wbr>Tournament<wbr>Details<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getplayertournamentlistresponse.html" class="tsd-kind-icon">Get<wbr>Player<wbr>Tournament<wbr>List<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getplayertournamentlistresponsetournament.html" class="tsd-kind-icon">Get<wbr>Player<wbr>Tournament<wbr>List<wbr>Response<wbr>Tournament</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getprizedetailsresponse.html" class="tsd-kind-icon">Get<wbr>Prize<wbr>Details<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/getteamdetailsresponse.html" class="tsd-kind-icon">Get<wbr>Team<wbr>Details<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/gettournamentdetailsparams.html" class="tsd-kind-icon">Get<wbr>Tournament<wbr>Details<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/gettournamentdetailsresponse.html" class="tsd-kind-icon">Get<wbr>Tournament<wbr>Details<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/gettournamentdetailsresponseprizebundle.html" class="tsd-kind-icon">Get<wbr>Tournament<wbr>Details<wbr>Response<wbr>Prize<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/gettournamentlistresponse.html" class="tsd-kind-icon">Get<wbr>Tournament<wbr>List<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/gettournamentlistresponseprizebundle.html" class="tsd-kind-icon">Get<wbr>Tournament<wbr>List<wbr>Response<wbr>Prize<wbr>Bundle</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/gettournamentlistresponsetournament.html" class="tsd-kind-icon">Get<wbr>Tournament<wbr>List<wbr>Response<wbr>Tournament</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/gettournamentsparams.html" class="tsd-kind-icon">Get<wbr>Tournaments<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/initializenewaugmentedplayerparams.html" class="tsd-kind-icon">Initialize<wbr>New<wbr>Augmented<wbr>Player<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/initializenewplayerparams.html" class="tsd-kind-icon">Initialize<wbr>New<wbr>Player<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/phraseprovider.html" class="tsd-kind-icon">Phrase<wbr>Provider</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/player.html" class="tsd-kind-icon">Player</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/playeravatarurigeneratorconfig.html" class="tsd-kind-icon">Player<wbr>Avatar<wbr>Uri<wbr>Generator<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/playernamegeneratorconfig.html" class="tsd-kind-icon">Player<wbr>Name<wbr>Generator<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/playerprofile.html" class="tsd-kind-icon">Player<wbr>Profile</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/playerprofilegeneratorbuilderparams.html" class="tsd-kind-icon">Player<wbr>Profile<wbr>Generator<wbr>Builder<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/playerprofilegeneratorconfig.html" class="tsd-kind-icon">Player<wbr>Profile<wbr>Generator<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/refreshsessionparams.html" class="tsd-kind-icon">Refresh<wbr>Session<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/registerplayerrequest.html" class="tsd-kind-icon">Register<wbr>Player<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/registerplayerresponse.html" class="tsd-kind-icon">Register<wbr>Player<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-is-not-exported">
+						<a href="interfaces/renderoptions.html" class="tsd-kind-icon">Render<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/submitscoreparams.html" class="tsd-kind-icon">Submit<wbr>Score<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/submitscorerequest.html" class="tsd-kind-icon">Submit<wbr>Score<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/submitscorerequeststats.html" class="tsd-kind-icon">Submit<wbr>Score<wbr>Request<wbr>Stats</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/updateplayertournamentrequest.html" class="tsd-kind-icon">Update<wbr>Player<wbr>Tournament<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/updateplayertournamentresponse.html" class="tsd-kind-icon">Update<wbr>Player<wbr>Tournament<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/usestreamingplatformaccountlinkingcoderequest.html" class="tsd-kind-icon">Use<wbr>Streaming<wbr>Platform<wbr>Account<wbr>Linking<wbr>Code<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported">
+						<a href="globals.html#ordinalfunc" class="tsd-kind-icon">Ordinal<wbr>Func</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#default_number_of_unique_avatars" class="tsd-kind-icon">DEFAULT_<wbr>NUMBER_<wbr>OF_<wbr>UNIQUE_<wbr>AVATARS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#default_refresh_session_buffer" class="tsd-kind-icon">DEFAULT_<wbr>REFRESH_<wbr>SESSION_<wbr>BUFFER</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#number_of_ms_per_second" class="tsd-kind-icon">NUMBER_<wbr>OF_<wbr>MS_<wbr>PER_<wbr>SECOND</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#number_of_seconds_per_minute" class="tsd-kind-icon">NUMBER_<wbr>OF_<wbr>SECONDS_<wbr>PER_<wbr>MINUTE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#ordinal" class="tsd-kind-icon">ORDINAL</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#radix_decimal" class="tsd-kind-icon">RADIX_<wbr>DECIMAL</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#ordinal" class="tsd-kind-icon">ordinal</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-private tsd-is-not-exported">
+						<a href="globals.html#arraytoobjectheader" class="tsd-kind-icon">array<wbr>ToObject<wbr>Header</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#gethash" class="tsd-kind-icon">get<wbr>Hash</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getplayerprofile" class="tsd-kind-icon">get<wbr>Player<wbr>Profile</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getplayerscore" class="tsd-kind-icon">get<wbr>Player<wbr>Score</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-private tsd-is-not-exported">
+						<a href="globals.html#objecttoarrayheader" class="tsd-kind-icon">object<wbr>ToArray<wbr>Header</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#renderleaderboard" class="tsd-kind-icon">render<wbr>Leaderboard</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container">
+	<i>2019, Amazon.com, Inc. or its affiliates. All Rights Reserved.</i>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
