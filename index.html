@@ -55,7 +55,7 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<p align="center">
-					<img src="./media/images/skills-gameon-sdk-banner.png" style="max-width:779px">
+					<img src="./media/images/skills-gameon-sdk-banner.png">
 					<br/>
 					<h1 align="center">Skills GameOn SDK for Node.js</h1>
 					<p align="center"><a href="https://travis-ci.com/alexa-games/skills-gameon-sdk-js/"><img src="https://travis-ci.com/alexa-games/skills-gameon-sdk-js.svg?token=aU3oCtpD6FyRqzKE87WW&branch=master"></a></p>
@@ -71,17 +71,19 @@
 				<p>The Skills GameOn SDK and GameOn SDK packages are licensed under the
 				<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>. The samples are licensed separately under the <a href="https://aws.amazon.com/asl/">Amazon Software License</a>.</p>
 				<h2 id="gameon-pricing">GameOn Pricing</h2>
-				<p>Alexa skill developers who publish an Alexa skill using the Skills GameOn SDK during the beta period will be eligible to receive free plays for usage within the Alexa skill. To qualify for this offer, <a href="https://developer.amazon.com/blogs/alexa/post/671de3de-0635-4626-9371-e926d7d655d6/skills-gameon-sdk">click here</a> to learn more.</p>
+				<p>Alexa skill developers who publish an Alexa skill using the Skills GameOn SDK (or calling the GameOn service via other means)
+					during the beta period will be eligible to receive free plays for usage within the Alexa skill. To qualify for this offer,
+				<a href="https://developer.amazon.com/blogs/alexa/post/671de3de-0635-4626-9371-e926d7d655d6/skills-gameon-sdk">click here</a> to learn more.</p>
 				<h2 id="packages-and-samples">Packages and Samples</h2>
 				<h3 id="packages">Packages</h3>
 				<ul>
 					<li><strong>GameOn SDK</strong> - A dependency free Node.js compatible API client, generated from the GameOn Swagger source with coverage of all the non-Admin API methods.</li>
 					<li><strong>Skills GameOn SDK</strong> - Common features that Alexa skill developers may want to leverage:<ul>
 							<li>Player-focused convenience methods:<ul>
-									<li><code>SkillsGameOnApiClient#initializeNewPlayer</code></li>
-									<li><code>SkillsGameOnApiClient#refreshPlayerSession</code></li>
-									<li><code>SkillsGameOnApiClient#enterTournamentForPlayer</code></li>
-									<li><code>SkillsGameOnApiClient#submitScoreForPlayer</code></li>
+									<li><code>#initializeNewPlayer</code></li>
+									<li><code>#refreshPlayerSession</code></li>
+									<li><code>#enterTournamentForPlayer</code></li>
+									<li><code>#submitScoreForPlayer</code></li>
 									<li>And more!</li>
 								</ul>
 							</li>
@@ -609,7 +611,7 @@ Saving file <span class="hljs-variable">${CWD}</span>/avatars/499.png from 36116
 
 upload: ./encrypted.txt to s3://YOUR_SKILL_NAME/gameon/secret.txt</code></pre>
 				<blockquote>
-					<p><strong>NOTE</strong>: Your file&#39;s URL will be <code>https://s3.amazonaws.com/YOUR_SKILL_NAME/gameon/secret.txt</code>.
+					<p><strong>NOTE</strong>: Your file&#39;s URL will be <strong><em><a href="https://s3.amazonaws.com/YOUR_SKILL_NAME/gameon/secret.txt">https://s3.amazonaws.com/YOUR_SKILL_NAME/gameon/secret.txt</a></em></strong>.
 					Remember it because you&#39;ll need it for the next step.</p>
 				</blockquote>
 				<h5 id="4-decrypt-your-gameon-api-secret">4. Decrypt your GameOn API Secret</h5>
