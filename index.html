@@ -3,14 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SDK for Node.js</title>
+	<title>Skills GameOn SDK</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 <header>
-	hello!!!
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
@@ -22,7 +21,7 @@
 					<div class="nav-links">
 						<ul>
 							<li>
-								<a href="https://github.com/amzn/gameon-alexa-sdk" alt="GitHub Repository">
+								<a href="https://github.com/alexa-games/skills-gameon-sdk-js" alt="Skills GameOn SDK GitHub Repository">
 									<svg width="22" height="22" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
 								</a>
 							</li>
@@ -32,7 +31,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title"><img src="media/images/icon.png"></img></a>
+					<a href="index.html" class="title">Skills GameOn SDK</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -47,7 +46,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> SDK for Node.js</h1>
+			<h1> Skills GameOn SDK</h1>
 		</div>
 	</div>
 </header>
@@ -56,17 +55,16 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<p align="center">
-					<img src="./media/images/gameon-alexa-logo.png">
+					<img src="./media/images/skills-gameon-sdk-banner.png" style="max-width:779px">
 					<br/>
 					<h1 align="center">Skills GameOn SDK for Node.js</h1>
 					<p align="center"><a href="https://travis-ci.com/alexa-games/skills-gameon-sdk-js/"><img src="https://travis-ci.com/alexa-games/skills-gameon-sdk-js.svg?token=aU3oCtpD6FyRqzKE87WW&branch=master"></a></p>
 				</p>
 				<blockquote>
 					<p><strong>Note:</strong> This public beta release of the Skills GameOn SDK includes the documentation, SDK code and sample code.
-						Please note that we may improve or change the Skills GameOn SDK as we receive feedback and iterate on the feature.
-					<br></p>
+					Please note that we may improve or change the Skills GameOn SDK as we receive feedback and iterate on the feature.</p>
 				</blockquote>
-				<p>The GameOn Alexa SDK for Node.js provides easy access to Amazon GameOn and creates higher-level methods, utilities, and examples that simplify the integration of GameOn features, like leaderboards, with Alexa skills.</p>
+				<p>The Skills GameOn SDK for Node.js provides easy access to Amazon GameOn and creates higher-level methods, utilities, and examples that simplify the integration of GameOn features, like leaderboards, with Alexa skills.</p>
 				<h2 id="amazon-gameon">Amazon GameOn</h2>
 				<p>Amazon GameOn is a set of flexible APIs that allow you to build cross-platform competitions into your games that drive engagement and increase monetization. With GameOn, you have an easy tool to strengthen your fanbase with leaderboards and leagues, awarding in-game and real-world prizes fulfilled by Amazon, and enabling streamers to play with their followers with a simple click. To learn more, see <a href="https://developer.amazon.com/gameon" target="_blank">Amazon GameOn</a>.</p>
 				<h2 id="license">License</h2>
@@ -96,8 +94,11 @@
 				</ul>
 				<h3 id="sample-skills">Sample Skills</h3>
 				<ul>
-					<li><strong>Word Word</strong> - A sample skill that showcases daily tournaments and many of the other above features. The Word Word skill is live, so you can enable it on your Alexa devices and play it today.
-					More information about the skill is also on the <a href="https://www.amazon.com/Amazon-Word/dp/B07PQYDDTJ/">Alexa Skills Store</a>.</li>
+					<li><p><strong>Word Word</strong> - A sample skill that showcases daily tournaments and many of the other above features. The Word Word skill is live, so you can enable it on your Alexa devices and play it today.
+						More information about the skill is also on the <a href="https://www.amazon.com/Amazon-Word/dp/B07PQYDDTJ/">Alexa Skills Store</a>.</p>
+					</li>
+					<li><p><strong>Word Word Lite</strong> - A code sample inspired by the live &#39;Word Word&#39; skill. It leverages the Skills GameOn SDK as in the original skill but has a modified game loop and does not include the production audio assets. The code sample can be found in in the <code>samples/word-word-lite</code> directory of this repository.</p>
+					</li>
 				</ul>
 				<h2 id="package-versions">Package Versions</h2>
 				<table>
@@ -166,21 +167,17 @@
 				<h3 id="setting-up-gameon">Setting up GameOn</h3>
 				<h4 id="create-an-aws-account">Create an AWS account</h4>
 				<p>Create your free AWS account <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html" target="_blank">here</a>. If you already have an AWS account, you can skip this step.</p>
-				<br>
 				<h4 id="retrieve-your-aws-account-id">Retrieve your AWS account ID</h4>
 				<p>Take note of your AWS account ID for use with GameOn. Your account ID will be a 12-digit number. For more information see <a href="https://docs.aws.amazon.com/general/latest/gr/acct-identifiers.html" target="_blank">Finding Your AWS ID</a>.</p>
-				<br>
 				<h4 id="create-an-amazon-developer-console">Create an Amazon Developer Console</h4>
 				<p>Create your free Amazon Developer account <a href="https://developer.amazon.com/gameon/console/home" target="_blank">here</a>.
 				If you already have an Amazon Developer account, you can sign in instead.</p>
-				<br>
 				<h4 id="register-your-game">Register Your Game</h4>
 				<p>To register your game, go to <a href="https://developer.amazon.com/gameon/console/register" target="_blank">GameOn console</a>, click <strong>Get API Keys</strong> or <strong>Register New Game</strong>, and follow the prompts. You will need your AWS account id in this step.</p>
 				<blockquote>
 					<p><strong>NOTE</strong>: Amazon GameOn is a stand-alone service. The <strong>Developer Name</strong> and <strong>Game Title</strong> fields can be arbitrary;
 					they do not need to match anything related to your AWS or ASK setups.</p>
 				</blockquote>
-				<br>
 				<h4 id="retrieve-your-public-api-key">Retrieve Your Public API Key</h4>
 				<p>After registering your game, you will gain access to your respective GameOn Public API Key. Save this string for later use when setting up the Skills GameOn client.</p>
 				<p><img src="./media/images/gameon-api-keys.png" alt="GameOn API Keys"></p>
@@ -188,7 +185,6 @@
 					<p><strong>NOTE</strong>: If you forget your GameOn Public API Key, you can always retrieve it from the <a href="https://developer.amazon.com/gameon/console/register">GameOn Registered Games</a> page and by clicking &quot;Details&quot; next
 					to your game in question.</p>
 				</blockquote>
-				<br>
 				<h3 id="installing-the-skills-gameon-sdk">Installing the Skills GameOn SDK</h3>
 				<p>To install the Skills GameOn SDK with NPM, use:</p>
 				<pre><code class="language-bash">npm install @alexa-games/skills-gameon-sdk</code></pre>
@@ -234,7 +230,6 @@
 					can enter the tournament, reenter the tournament&#39;s match, submit scores to the match,
 				and to retrieve the match&#39;s leaderboard. The <code>Tournament ID</code> can be found in the URL.</p>
 				<p><img src="./media/images/gameon-note-matchid.png" alt="GameOn Competition Published Successfully"></p>
-				<br>
 				<h4 id="register-and-authenticate-a-new-player">Register and Authenticate a New Player</h4>
 				<p>For each new user of your Alexa skill, you must first register &amp; authenticate
 					them with the GameOn service before they can enter tournaments, enter matches,
@@ -266,21 +261,14 @@
     <span class="hljs-string">"sessionApiKey"</span>: <span class="hljs-string">"&lt;GAMEON_PLAYER_SESSION_API_KEY&gt;"</span>,
     <span class="hljs-string">"sessionExpirationDate"</span>: <span class="hljs-string">"&lt;GAMEON_PLAYER_SESSION_EXPIRATION_DATE&gt;"</span>
 }</code></pre>
-				<br>
 				<blockquote>
 					<p><strong>NOTE</strong>: If you are interested in creating a player with a profile (name, color, and avatar), you can use the <code>#initializeNewAugmentedPlayer</code>
 						method that is available with the <code>SkillsGameOnApiClient</code>. This method is similar to <code>#initializeNewPlayer</code> except that it also
 						takes in an additional <code>PlayerProfileGenerator</code> as a parameter. To instantiate a <code>PlayerProfileGenerator</code>, please see the section
-					<a href="#how-to-handle-player-names">How to Handle Player Names</a>.</p>
-				</blockquote>
-				<br>
-				<blockquote>
+						<a href="#how-to-handle-player-names">How to Handle Player Names</a>.
+					A success message</p></p>
 					<p><strong>NOTE</strong>: For the rest of this tutorial, when you see <code>player</code>, it is referring to the player object
 					that we created in this step.</p>
-				</blockquote>
-				<br>
-				<br>
-				<blockquote>
 					<p><strong>NOTE</strong>: We also provide a convenience method for refreshing your Player&#39;s
 					GameOn session. The call will looking something like:</p>
 				</blockquote>
@@ -289,7 +277,6 @@
     appBuildType: <span class="hljs-string">'development'</span>, <span class="hljs-comment">// GameOn API requires either 'development' or 'release', but it's only used for their metrics.</span>
     player: player
 });</code></pre>
-				<br>
 				<h4 id="enter-the-player-into-the-game-s-tournament">Enter the Player into the Game&#39;s Tournament</h4>
 				<p>A player must first enter the Tournament before they can enter matches
 				and submit their scores.</p>
@@ -297,7 +284,6 @@
     tournamentId: <span class="hljs-string">'&lt;GAMEON_TOURNAMENT_ID&gt;'</span>, <span class="hljs-comment">// The Tournament ID that is associated with your game.</span>
     player: player
 });</code></pre>
-				<br>
 				<h4 id="enter-the-player-into-the-tournament-s-match">Enter the Player into the Tournament&#39;s Match</h4>
 				<p>Before a player can submit a score to a match, they must first join said
 				match. To do that, call:</p>
@@ -305,7 +291,6 @@
     matchId: <span class="hljs-string">'&lt;GAMEON_MATCH_ID&gt;'</span>, <span class="hljs-comment">// The Match Id that is associated with your tournament.</span>
     player: player
 });</code></pre>
-				<br>
 				<h4 id="submit-the-player-s-score">Submit the Player&#39;s Score</h4>
 				<p>Now the player can submit their score to the tournaments&#39;s match, like so:</p>
 				<pre><code class="language-typescript"><span class="hljs-keyword">await</span> client.submitScoreForPlayer({
@@ -316,7 +301,6 @@
 				<blockquote>
 					<p><strong>NOTE</strong>: You must <strong>always</strong> enter the match before submitting a score.</p>
 				</blockquote>
-				<br>
 				<h4 id="get-the-leaderboard">Get the Leaderboard</h4>
 				<p>To retrieve just the top scorers on the leaderboard, you can call:</p>
 				<pre><code class="language-typescript"><span class="hljs-keyword">await</span> client.getMatchLeaderboardForPlayer({
@@ -379,7 +363,6 @@
         }
     ]
 }</code></pre>
-				<br>
 				<h4 id="get-the-current-player-s-score">Get the Current Player&#39;s Score</h4>
 				<p>To get the current player&#39;s score and rank, you can call our convenience method:</p>
 				<pre><code class="language-typescript"><span class="hljs-keyword">await</span> client.getPlayerScore(<span class="hljs-string">'&lt;GAMEON_MATCH_ID&gt;'</span>, player);</code></pre>
@@ -390,7 +373,6 @@
     <span class="hljs-attr">rank</span>: <span class="hljs-number">1</span>,
     <span class="hljs-attr">ordinal</span>: <span class="hljs-string">"first"</span>
 }</code></pre>
-				<br>
 				<h3 id="displaying-a-leaderboard-with-alexa-presentation-language">Displaying a Leaderboard with Alexa Presentation Language</h3>
 				<p>This is a tutorial section that illustrates how you can render a leaderboard from your skill onto Alexa devices that have screens.
 				Note that this is just a tutorial and a bootstrapping procedure, so it is not the absolute way to do this.</p>
@@ -406,7 +388,6 @@
 <span class="hljs-keyword">const</span> renderOptions = { <span class="hljs-attr">backgroundImageUrl</span>: <span class="hljs-string">'&lt;IMAGE_URL&gt;'</span> };
 <span class="hljs-keyword">const</span> playerProfileGenerator = PlayerProfileGeneratorBuilder.getGenerator({ <span class="hljs-attr">avatarBaseUrl</span>: <span class="hljs-string">'&lt;AVATAR_BASE_URL&gt;'</span> });
 <span class="hljs-keyword">const</span> leaderboardDirective = renderLeaderboard(player, leaderboard, renderOptions, playerProfileGenerator); <span class="hljs-comment">// #renderLeaderboard is part of the @alexa-games/skills-gameon-sdk package.</span></code></pre>
-				<br>
 				<h3 id="how-to-handle-player-names">How to Handle Player Names</h3>
 				<h4 id="optional-player-profile-generation">Optional: Player Profile Generation</h4>
 				<p>The Skills GameOn SDK includes mechanisms to generate a unique name and avatar for your players.  These two values together are referred to as the player profile.</p>
@@ -414,7 +395,7 @@
 				<p>The simplest way to create a player profile is with an instance of PlayerProfileGenerator which you retrieve from PlayerProfileGeneratorBuilder.  For example:</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> generator = PlayerProfileGenerator.getGenerator({
     <span class="hljs-attr">locale</span>: <span class="hljs-string">"en-US"</span>,
-    <span class="hljs-attr">avatarBaseUrl</span>: <span class="hljs-string">"https://example.com/myskillarea/avatars"</span>,
+    <span class="hljs-attr">avatarBaseUrl</span>: <span class="hljs-string">"https://s3.us-east-1.amazonaws.com/YOUR_BUCKET_NAME"</span>,
     <span class="hljs-attr">numberOfUniqueAvatars</span>: <span class="hljs-number">50</span>
 });</code></pre>
 				<p>Once you have a generator, get a random profile such as:</p>
@@ -433,7 +414,6 @@
 				<p>If you don&#39;t need both an avatar URL and a name for your skill, you may generate these properties separately using
 				<strong>PlayerAvatarUriGenerator</strong> and <strong>PlayerNameGenerator</strong> respectively.</p>
 				<p>Of course, you can create names and avatars using other mechanisms of your choosing.</p>
-				<br>
 				<h4 id="name-generation">Name Generation</h4>
 				<p>You may use <strong>PlayerNameGenerator</strong> to generate just a name for your player such as:</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> generator = PlayerNameGeneratorBuilder.getGenerator(<span class="hljs-string">'en-US'</span>);
@@ -450,7 +430,6 @@
 				<p>The first parameter, <em>locale</em>, indicates the preferred language of the word list. Currently only English
 					words are selected regardless of the provided locale. This gives us the ability to add support for new
 				languages in the future without changing the API signature.</p>
-				<br>
 				<h4 id="avatar-uri-generation">Avatar URI Generation</h4>
 				<p>You may use <strong>PlayerAvatarUriGenerator</strong> to generate just the avatar URI for you player.</p>
 				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> generator = PlayerAvatarUriGeneratorBuilder.getGenerator({
@@ -467,35 +446,33 @@
 
 <span class="hljs-comment">// Select a random avatar image.</span>
 <span class="hljs-keyword">const</span> uri3 = generator.getRandom();</code></pre>
-				<br>
 				<h4 id="avatar-generation">Avatar Generation</h4>
 				<p>The SDK includes a CLI tool that demonstrates one way to generate images that you could use as avatars.
 					You will likely want images unique to your skill and branding, but these images can serve as placeholders
 				or just as illustration.</p>
-				<pre><code class="language-stdout">npm install gridy-avatars convert-svg-to-png
+				<pre><code class="language-bash">npm install gridy-avatars convert-svg-to-png
 npx avatar-maker</code></pre>
 				<p>This will generate 500 avatars in a directory called <strong>avatars</strong>.  Use the --help option for
 				other options:</p>
-				<pre><code class="language-stdout">npx avatar-maker -- --help
+				<pre><code class="language-bash">npx avatar-maker -- --<span class="hljs-built_in">help</span>
 
 This CLI tool will generate a 100x100 pixel image that can be used as a player avatar.
-By default, the script will create 500 images in the avatars directory.
-You may specify different values in the first two parameters of the script. For example:
+By default, the script will create 500 images <span class="hljs-keyword">in</span> the avatars directory.
+You may specify different values <span class="hljs-keyword">in</span> the first two parameters of the script. For example:
 
        npx avatar-maker -- 50 avatar1
 
-Will create 50 images in the avatar1 directory.</code></pre>
+Will create 50 images <span class="hljs-keyword">in</span> the avatar1 directory.</code></pre>
 				<p>Here is the output of the script:</p>
-				<pre><code class="language-stdout">npx avatar-maker
+				<pre><code class="language-bash">npx avatar-maker
 
-Generating 500 avatars in directory &#39;avatar&#39;
+Generating 500 avatars <span class="hljs-keyword">in</span> directory <span class="hljs-string">'avatar'</span>
 Creating avatars
-Saving file ${CWD}/avatars/0.png from 756603
-Saving file ${CWD}/avatars/1.png from 114505
+Saving file <span class="hljs-variable">${CWD}</span>/avatars/0.png from 756603
+Saving file <span class="hljs-variable">${CWD}</span>/avatars/1.png from 114505
 ...
-Saving file ${CWD}/avatars/498.png from 772043
-Saving file ${CWD}/avatars/499.png from 361160</code></pre>
-				<br>
+Saving file <span class="hljs-variable">${CWD}</span>/avatars/498.png from 772043
+Saving file <span class="hljs-variable">${CWD}</span>/avatars/499.png from 361160</code></pre>
 				<h2 id="best-practices">Best Practices</h2>
 				<h3 id="gameon-api-secret-management">GameOn API Secret Management</h3>
 				<p>Rather than exposing your GameOn Public API key in cleartext in your source code, we
@@ -505,7 +482,6 @@ Saving file ${CWD}/avatars/499.png from 361160</code></pre>
 				<blockquote>
 					<p><strong>NOTE</strong>: The following tutorials assume that you&#39;re using AWS Lambda to host your skill.</p>
 				</blockquote>
-				<br>
 				<h4 id="using-environment-variable-encryption">Using Environment Variable Encryption</h4>
 				<p>This strategy is much simpler than the next. It&#39;s the preferred one
 					if you don&#39;t have any plans to share secrets with other developers, or if
@@ -516,7 +492,6 @@ Saving file ${CWD}/avatars/499.png from 361160</code></pre>
 				to the Lambda code.</p>
 				<p>Check out the AWS documentation on <a href="https://docs.aws.amazon.com/lambda/latest/dg/env_variables.html#env_encrypt" target="_blank">Environment Variable Encryption</a>
 				for instructions on how to use this strategy.</p>
-				<br>
 				<h4 id="using-an-encrypted-secrets-file">Using an Encrypted Secrets File</h4>
 				<p>This strategy will create an encrypted secrets file.
 					This can be fully automated (no reason to abbreviate environment variables) and can
@@ -582,28 +557,26 @@ Saving file ${CWD}/avatars/499.png from 361160</code></pre>
 					<li><code>YOUR_SKILL_LAMBDA_FUNC_EXECUTION_ROLE</code>: The execution AWS IAM Role
 					for your skill&#39;s Lambda function.</li>
 				</ul>
-				<br>
 				<h6 id="create-the-aws-kms-key-with-the-aws-cli">Create the AWS KMS Key with the AWS CLI</h6>
 				<p>Run the following AWS CLI commands:</p>
-				<pre><code class="language-stdout">-&gt; aws kms create-key --policy file://kmsPolicy.json --profile YOUR_SKILL_MANAGEMENT_IAM_USER_NAME --region us-east-1
+				<pre><code class="language-bash">-&gt; aws kms create-key --policy file://kmsPolicy.json --profile YOUR_SKILL_MANAGEMENT_IAM_USER_NAME --region us-east-1
 
 {
-    &quot;KeyMetadata&quot;: {
-        &quot;AWSAccountId&quot;: &quot;YOUR_SKILL_MANAGEMENT_IAM_USER_NAME&quot;,
-        &quot;KeyId&quot;: &quot;YOUR_AWS_KMS_KEY_ID&quot;,
-        &quot;Arn&quot;: &quot;arn:aws:kms:us-east-1:YOUR_SKILL_AWS_ACCOUNT_ID:key/YOUR_AWS_KMS_KEY_ID&quot;,
-        &quot;CreationDate&quot;: 1552500200,
-        &quot;Enabled&quot;: true,
-        &quot;Description&quot;: &quot;&quot;,
-        &quot;KeyUsage&quot;: &quot;ENCRYPT_DECRYPT&quot;,
-        &quot;KeyState&quot;: &quot;Enabled&quot;,
-        &quot;Origin&quot;: &quot;AWS_KMS&quot;,
-        &quot;KeyManager&quot;: &quot;CUSTOMER&quot;
+    <span class="hljs-string">"KeyMetadata"</span>: {
+        <span class="hljs-string">"AWSAccountId"</span>: <span class="hljs-string">"YOUR_SKILL_MANAGEMENT_IAM_USER_NAME"</span>,
+        <span class="hljs-string">"KeyId"</span>: <span class="hljs-string">"YOUR_AWS_KMS_KEY_ID"</span>,
+        <span class="hljs-string">"Arn"</span>: <span class="hljs-string">"arn:aws:kms:us-east-1:YOUR_SKILL_AWS_ACCOUNT_ID:key/YOUR_AWS_KMS_KEY_ID"</span>,
+        <span class="hljs-string">"CreationDate"</span>: 1552500200,
+        <span class="hljs-string">"Enabled"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">"Description"</span>: <span class="hljs-string">""</span>,
+        <span class="hljs-string">"KeyUsage"</span>: <span class="hljs-string">"ENCRYPT_DECRYPT"</span>,
+        <span class="hljs-string">"KeyState"</span>: <span class="hljs-string">"Enabled"</span>,
+        <span class="hljs-string">"Origin"</span>: <span class="hljs-string">"AWS_KMS"</span>,
+        <span class="hljs-string">"KeyManager"</span>: <span class="hljs-string">"CUSTOMER"</span>
     }
 }
 
--&gt; aws kms create-alias --alias-name alias/GameOnApiKey --target-key-id YOUR_AWS_KMS_KEY_ID</code></pre>
-				<br>
+-&gt; aws kms create-alias --<span class="hljs-built_in">alias</span>-name <span class="hljs-built_in">alias</span>/GameOnApiKey --target-key-id YOUR_AWS_KMS_KEY_ID</code></pre>
 				<h5 id="2-encrypt-your-gameon-api-secret">2. Encrypt your GameOn API Secret</h5>
 				<h6 id="create-the-cleartext-file">Create the Cleartext File</h6>
 				<p>Create the file <code>cleartext.json</code> that has a JSON structure with your
@@ -611,7 +584,6 @@ Saving file ${CWD}/avatars/499.png from 361160</code></pre>
 				<pre><code class="language-json">{
     <span class="hljs-attr">"gameOnApiKey"</span>: <span class="hljs-string">"YOUR_GAMEON_API_KEY"</span>
 }</code></pre>
-				<br>
 				<h6 id="encrypt-the-cleartext-file-with-the-aws-cli">Encrypt the Cleartext File with the AWS CLI</h6>
 				<pre><code class="language-bash">-&gt; aws kms encrypt \
 --key-id YOUR_AWS_KMS_KEY_ID \
@@ -622,27 +594,24 @@ Saving file ${CWD}/avatars/499.png from 361160</code></pre>
 --region us-east-1 \
 | base64 --decode &gt; encrypted.txt</code></pre>
 				<p>This will output an <code>encrypted.txt</code> file.</p>
-				<br>
 				<h5 id="3-upload-encrypted-gameon-api-secret">3. Upload Encrypted GameOn API Secret</h5>
 				<p>Now you&#39;ll upload your encrypted secret to AWS S3 so that your skill can
 				refer to it when using the AWS KMS service at runtime.</p>
 				<h6 id="create-aws-s3-bucket-with-the-aws-cli">Create AWS S3 Bucket with the AWS CLI</h6>
 				<p>You&#39;ll need an AWS S3 Bucket to hold your encrypted file.</p>
-				<pre><code class="language-stdout">-&gt; aws s3 create-bucket --bucket YOUR_SKILL_NAME --profile YOUR_SKILL_MANAGEMENT_IAM_USER_NAME --region us-east-1
+				<pre><code class="language-bash">-&gt; aws s3 create-bucket --bucket YOUR_SKILL_NAME --profile YOUR_SKILL_MANAGEMENT_IAM_USER_NAME --region us-east-1
 
 {
-    &quot;Location&quot;: &quot;/YOUR_SKILL_NAME&quot;
+    <span class="hljs-string">"Location"</span>: <span class="hljs-string">"/YOUR_SKILL_NAME"</span>
 }</code></pre>
-				<br>
 				<h6 id="upload-the-encrypted-file-to-s3-with-the-aws-cli">Upload the Encrypted File to S3 with the AWS CLI</h6>
-				<pre><code class="language-stdout">-&gt; aws s3 cp encrypted.txt s3://YOUR_SKILL_NAME/gameon/secret.txt --profile YOUR_SKILL_MANAGEMENT_IAM_USER_NAME --region us-east-1
+				<pre><code class="language-bash">-&gt; aws s3 cp encrypted.txt s3://YOUR_SKILL_NAME/gameon/secret.txt --profile YOUR_SKILL_MANAGEMENT_IAM_USER_NAME --region us-east-1
 
 upload: ./encrypted.txt to s3://YOUR_SKILL_NAME/gameon/secret.txt</code></pre>
 				<blockquote>
 					<p><strong>NOTE</strong>: Your file&#39;s URL will be <code>https://s3.amazonaws.com/YOUR_SKILL_NAME/gameon/secret.txt</code>.
 					Remember it because you&#39;ll need it for the next step.</p>
 				</blockquote>
-				<br>
 				<h5 id="4-decrypt-your-gameon-api-secret">4. Decrypt your GameOn API Secret</h5>
 				<p>Now, in your skill, it&#39;s time to decrypt your GameOn API Secret so that you
 					can make calls to the GameOn service. We&#39;ve created a tool for you
@@ -661,19 +630,21 @@ upload: ./encrypted.txt to s3://YOUR_SKILL_NAME/gameon/secret.txt</code></pre>
     <span class="hljs-keyword">return</span> secrets[<span class="hljs-string">'gameOnApiKey'</span>];
 }</code></pre>
 				<p>And that&#39;s it. You are now safely managing your GameOn Public API Key.</p>
-				<br>
 				<h2 id="samples">Samples</h2>
 				<h3 id="alexa-skill-word-word">Alexa Skill: Word Word</h3>
 				<p>Word Word is a fun tongue-twisting challenge. When playing, Alexa will give you a silly, random word. Simply repeat the
 					word as many times as you can as fast as you can. Then see how you rank against the daily leaderboard! The Word Word
 					skill is live, so you can enable it on your Alexa devices and play it today. More information about the skill is also
 				on the <a href="https://www.amazon.com/Amazon-Word/dp/B07PQYDDTJ/">Alexa Skills Store</a>.</p>
-				<h4 id="code-sample-word-word-lite">Code Sample: Word Word Lite</h4>
+				<h3 id="code-sample-word-word-lite">Code Sample: Word Word Lite</h3>
 				<p>Word Word Lite is a bare-bones sample skill inspired by the official &#39;Word Word&#39; game. The code sample can be found in in the <code>samples</code> directory.
 				To deploy this sample in your Alexa developer account, you will need to complete following steps:</p>
 				<ol>
-					<li>Update <code>gameConstants.js</code> with the matchId, tournamentId, appBuildType, and gameApiKey</li>
-					<li>Build the skill and deploy to your preferred infrastructure (e.g. AWS Lambda, etc)</li>
+					<li>Use the ASK CLI to set up a new skill project . Check out the <a href="https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html">ASK CLI</a> for instructions on how to setup a new custom skill project.</li>
+					<li>Copy the files under the src folder to the <code>lambda/custom/</code> folder in your new custom skill project.</li>
+					<li>Copy the <code>skill.json</code> and the models folder to your custom skill.</li>
+					<li>Set up environment variables for the variables defined in the  <code>src/settings.js</code> file. Refer to the section <a href="#using-environment-variable-encryption">Using Environment Variable Encryption</a> for instructions on how to set up environment variables for your Lambda function.</li>
+					<li>Build the skill and deploy using the ASK CLI.</li>
 				</ol>
 				<h4 id="skill-flow">Skill Flow</h4>
 				<ol>
@@ -681,11 +652,10 @@ upload: ./encrypted.txt to s3://YOUR_SKILL_NAME/gameon/secret.txt</code></pre>
 						<p>Skill will launch and check if the player has been created. If the player has not been created it will register a new player with GameOn.
 						Otherwise, the skill will check if it needs to refresh the player&#39;s session with the GameOn services.</p>
 					</li>
-					<li><p>Challenge</p>
-						<p>Immediately after launch, the game will move to the challenge state where it gets the challenge word and gives the player
-							instructions. The user utterance is mapped to the PLAY_GAME_INTENT which has 52 slot values. An example of this model
-						can be found at <code>samples/word-word-lite/models/en-US.json</code>.</p>
-					</li>
+					<li>Challenge
+						Immediately after launch, the game will move to the challenge state where it gets the challenge word and gives the player
+						instructions. The user utterance is mapped to the PLAY_GAME_INTENT which has 52 slot values. An example of this model
+					can be found at <code>samples/word-word-lite/models/en-US.json</code>.</li>
 					<li><p>Result</p>
 						<p>The score is calculated by the skill code and submitted to GameOn.
 						Updated leaderboards are requested from GameOn, parsed and returned to the user.</p>
@@ -1090,7 +1060,7 @@ upload: ./encrypted.txt to s3://YOUR_SKILL_NAME/gameon/secret.txt</code></pre>
 	</div>
 </footer>
 <div class="container">
-	<i>2019, Amazon.com, Inc. or its affiliates. All Rights Reserved.</i>
+	<i>Brought to you with ❤ by the Alexa Games team at Amazon. © 2019, Amazon.com, Inc. or its affiliates. All Rights Reserved.</i>
 </div>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
