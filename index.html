@@ -66,7 +66,8 @@
 				</blockquote>
 				<p>The Skills GameOn SDK for Node.js provides easy access to Amazon GameOn and creates higher-level methods, utilities, and examples that simplify the integration of GameOn features, like leaderboards, with Alexa skills.</p>
 				<h2 id="amazon-gameon">Amazon GameOn</h2>
-				<p>Alexa skill developers who publish an Alexa skill using the Skills GameOn SDK (or calling the GameOn service via other means) during the beta period will be eligible to receive free plays for usage within the Alexa skill. To qualify for this offer, <a href="https://developer.amazon.com/blogs/alexa/post/671de3de-0635-4626-9371-e926d7d655d6/skills-gameon-sdk">click here</a> to learn more.</p>
+				<p>Amazon GameOn is a set of <a href="https://developer.amazon.com/docs/gameon/game-api-ref.html" target="_blank">flexible APIs</a> that allow you to build cross-platform competitions into your games that drive engagement. In addition to leaderboards, you have an easy tool to strengthen your fanbase with leaderboards and leagues, awarding in-game prizes, and enabling streamers to play with their followers with a simple click.
+				To learn more, see <a href="https://developer.amazon.com/gameon" target="_blank">Amazon GameOn</a>.</p>
 				<h2 id="license">License</h2>
 				<p>The Skills GameOn SDK and GameOn SDK packages are licensed under the
 				<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>. The samples are licensed separately under the <a href="https://aws.amazon.com/asl/">Amazon Software License</a>.</p>
@@ -654,10 +655,11 @@ upload: ./encrypted.txt to s3://YOUR_SKILL_NAME/gameon/secret.txt</code></pre>
 						<p>Skill will launch and check if the player has been created. If the player has not been created it will register a new player with GameOn.
 						Otherwise, the skill will check if it needs to refresh the player&#39;s session with the GameOn services.</p>
 					</li>
-					<li>Challenge
-						Immediately after launch, the game will move to the challenge state where it gets the challenge word and gives the player
-						instructions. The user utterance is mapped to the PLAY_GAME_INTENT which has 52 slot values. An example of this model
-					can be found at <code>samples/word-word-lite/models/en-US.json</code>.</li>
+					<li><p>Challenge</p>
+						<p>Immediately after launch, the game will move to the challenge state where it gets the challenge word and gives the player
+							instructions. The user utterance is mapped to the PLAY_GAME_INTENT which has 52 slot values. An example of this model
+						can be found at <code>samples/word-word-lite/models/en-US.json</code>.</p>
+					</li>
 					<li><p>Result</p>
 						<p>The score is calculated by the skill code and submitted to GameOn.
 						Updated leaderboards are requested from GameOn, parsed and returned to the user.</p>
