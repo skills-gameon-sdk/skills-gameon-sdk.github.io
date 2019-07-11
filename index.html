@@ -231,7 +231,9 @@
 				<p><img src="./media/images/gameon-select-leaderboard.png" alt="GameOn Competition Published Successfully"></p>
 				<p>Note the <code>Tournament ID</code> and the <code>Match ID</code>. You will need them so that your players
 					can enter the tournament, reenter the tournament&#39;s match, submit scores to the match,
-				and to retrieve the match&#39;s leaderboard. The <code>Tournament ID</code> can be found in the URL.</p>
+					and to retrieve the match&#39;s leaderboard. The <code>Tournament ID</code> can be found in the URL.
+					For recurring tournaments, you will need to use the <code>SkillsGameOnApiClient.getTournamentsByTitle</code>
+				method since the <code>Tournament ID</code> changes on each recurrence.</p>
 				<p><img src="./media/images/gameon-note-matchid.png" alt="GameOn Competition Published Successfully"></p>
 				<h4 id="register-and-authenticate-a-new-player">Register and Authenticate a New Player</h4>
 				<p>For each new user of your Alexa skill, you must first register &amp; authenticate

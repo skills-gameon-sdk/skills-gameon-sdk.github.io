@@ -59,15 +59,9 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Represents a basic contract for API request execution
-						Represents a basic contract for API request execution</p>
+						<p>Represents a basic contract for API request execution</p>
 					</div>
 					<dl class="tsd-comment-tags">
-						<dt>export</dt>
-						<dd></dd>
-						<dt>interface</dt>
-						<dd><p>ApiClient</p>
-						</dd>
 						<dt>export</dt>
 						<dd></dd>
 						<dt>interface</dt>
@@ -127,7 +121,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alexa-games/skills-gameon-sdk-js/blob/cfd1191/packages/gameon-sdk/src/client/api/apiClient.ts#L73">gameon-sdk/src/client/api/apiClient.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/alexa-games/skills-gameon-sdk-js/blob/4fbcd7f/packages/gameon-sdk/src/client/api/apiClient.ts#L73">gameon-sdk/src/client/api/apiClient.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -156,17 +150,15 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 					<a name="apiconfiguration" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> api<wbr>Configuration</h3>
-					<div class="tsd-signature tsd-kind-icon">api<wbr>Configuration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ApiConfiguration</span></div>
+					<div class="tsd-signature tsd-kind-icon">api<wbr>Configuration<span class="tsd-signature-symbol">:</span> <a href="../interfaces/apiconfiguration.html" class="tsd-signature-type">ApiConfiguration</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/alexa-games/skills-gameon-sdk-js/blob/cfd1191/packages/gameon-sdk/src/client/api/apiClient.ts#L73">gameon-sdk/src/client/api/apiClient.ts:73</a></li>
-							<li>Defined in skills-gameon-sdk/node_modules/@alexa-games/gameon-sdk/src/client/api/apiClient.ts:73</li>
+							<li>Defined in <a href="https://github.com/alexa-games/skills-gameon-sdk-js/blob/4fbcd7f/packages/gameon-sdk/src/client/api/apiClient.ts#L73">gameon-sdk/src/client/api/apiClient.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>ApiConfiguration instance to provide dependencies for this service client
-							ApiConfiguration instance to provide dependencies for this service client</p>
+							<p>ApiConfiguration instance to provide dependencies for this service client</p>
 						</div>
 					</div>
 				</section>
@@ -178,13 +170,12 @@
 					<h3>invoke</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">invoke<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><a href="../interfaces/apiclientrequest.html" class="tsd-signature-type">ApiClientRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/apiclientresponse.html" class="tsd-signature-type">ApiClientResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
-						<li class="tsd-signature tsd-kind-icon">invoke<span class="tsd-signature-symbol">(</span>request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ApiClientRequest</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ApiClientResponse</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/alexa-games/skills-gameon-sdk-js/blob/cfd1191/packages/gameon-sdk/src/client/http/apiClient.ts#L58">gameon-sdk/src/client/http/apiClient.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/alexa-games/skills-gameon-sdk-js/blob/4fbcd7f/packages/gameon-sdk/src/client/http/apiClient.ts#L58">gameon-sdk/src/client/http/apiClient.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -205,46 +196,11 @@
 								<li>
 									<h5>request: <a href="../interfaces/apiclientrequest.html" class="tsd-signature-type">ApiClientRequest</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>request to dispatch to the ApiClient</p>
-										</div>
+										<p>request to dispatch to the ApiClient</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/apiclientresponse.html" class="tsd-signature-type">ApiClientResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>Response from the ApiClient</p>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in skills-gameon-sdk/node_modules/@alexa-games/gameon-sdk/src/client/http/apiClient.ts:58</li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Dispatches a request to an API endpoint described in the request.
-										An ApiClient is expected to resolve the Promise in the case an API returns a non-200 HTTP
-										status code. The responsibility of translating a particular response code to an error lies with the
-									caller to invoke.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>memberof</dt>
-									<dd><p>ApiClient</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>request: <span class="tsd-signature-type">ApiClientRequest</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>request to dispatch to the ApiClient</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ApiClientResponse</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Response from the ApiClient</p>
 						</li>
 					</ul>
